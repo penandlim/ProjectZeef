@@ -59,7 +59,8 @@ public class MouseOrbitImproved : MonoBehaviour
 
                 -Input.GetAxis("Mouse Y") * 200.0f * Time.smoothDeltaTime,
                 Input.GetAxis("Mouse X") * 200.0f * Time.smoothDeltaTime,
-                0
+                0,
+                Space.World
         );
         transform.rotation = Quaternion.Euler(
             transform.rotation.eulerAngles.x,
